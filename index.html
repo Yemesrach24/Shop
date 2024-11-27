@@ -4,13 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet"/>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css" />
     <title>Gebeya </title>
+   
   </head>
   <body>
     <section class="section">
@@ -119,7 +118,11 @@
       </div>
     </section>
 
+
     <section id="pricing">
+
+
+      
       <div class="container py-3">
         <header>
           <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
@@ -131,9 +134,12 @@
           </div>
         </header>
       
-        <main>
-          <div class="row row-cols-1 row-cols-md-3 mb-3 ">
-            <div class="col">
+        <!--<main> -->
+           <div class="row-cols-1 row-cols-md-3 mb-3 scroll-container"> 
+             
+           <!-- <div class="scroll-container">--> 
+           
+              <div class="item">
               <div class="card mb-4 rounded-3 shadow-sm">
                 <div class="card-header py-3">
                   <img src="./assets/bag.png">
@@ -150,7 +156,7 @@
               </div>
             </div>
 
-            <div class="col">
+            <div class=" item">
               <div class="card mb-4 rounded-3 shadow-sm">
                 <div class="card-header py-3">
                   <img src="./assets/shoe.png">
@@ -160,13 +166,15 @@
                  <div class="btn_container">
 
                  <p>$150</p>
-                 <button class="touch">Add to cart</button>
+                 
+               <button onclick="window.location.href='cart.html';" class="touch">Add to cart</button>
 
                  </div>
                
               </div>
+              </div>
 
-              <div class="col">
+              <div class="item">
                 <div class="card mb-4 rounded-3 shadow-sm">
                   <div class="card-header py-3">
                     <img src="./assets/dress.png">
@@ -178,26 +186,25 @@
                    <p>$300</p>
                    <button class="touch">Add to cart</button>
   
-                   </div>
-                </div>
-          </div> 
+                    </div>
+                 </div>
+              </div> 
+      </div>
       </div>
     </section>
-
-
 
     <section class="three">
       <div class="section__container ">
         <div class="button-container">
-          <button>Button 1</button>
-          <button>Button 2</button>
-          <button>Button 3</button>
-          <button>Button 4</button>
-          <button>Button 5</button>
-          <button>Button 6</button>
+          <button >Men</button>
+          <button style="background-color: orange;">Women</button>
+          <button >kids</button>
+          <button >Perfumes</button>
+          <button >Sport</button>
+          <button >Jewelries</button>
         </div>
         
-          <p style="color: black;">men women.......</p>
+         
 
           <div class="grid-container">
             <div class="grid-item"><img src="./assets/1.png" alt="shoes"></div>
@@ -256,26 +263,27 @@
 
 
     <section class="project">
-      <div class="section__container project__container">
+      <div class="section__container project__container ">
        
         <h1 style="color: black;">Browse by category</h1>
 
-        <div class="project__grid">
-          <div class="project__card">
+        <div class="project__grid scroll-container">
+          <div class="project__card item">
+          
 
             <a href="#"> <img src="./assets/t-shirt.png" alt="picture of t-shirt" /> </a>
             
           </div>
 
-          <div class="project__card">
+          <div class="project__card item">
             <a href="#"> <img src="./assets/vintage.png" alt="picture of dress" /> </a>
           </div>
 
-          <div class="project__card">
+          <div class="project__card item">
             <a href="#"> <img src="./assets/beauty.png" alt="picture of beauty products" /> </a>
           </div>
           
-          <div class="project__card">
+          <div class="project__card item">
             <a href="#"> <img src="./assets/gym.png" alt="picture of gym wears" /> </a> 
           </div>
 
@@ -288,8 +296,9 @@
     
 
 
-    <footer>
-      <div class="section__container footer__container">
+   <footer>  
+      
+      <!--<div class="section__container footer__container">
         <div class="footer__content">
           <h2 class="section__title">Contact Me!</h2>
           
@@ -302,7 +311,124 @@
 
         </div>
         
-      </div>
+      </div> -->
+
+      
+
+         <div class="container_footer">
+            <!-- Desktop Content -->
+           <div class="desktop-layout">
+            <div class="section__container footer__container">
+              <div class="footer__content">
+            <img class="logo_feature" src="./assets/logo footer.png"  style="width: 221px; height: 223px;">
+            <div class="social_media">
+            <img class="social" src="./assets/instagram-.png" style="width: 32px; height: 32px;" >
+            <img class="social" src="./assets/whatsapp.png" style="width: 32px; height: 32px;" >
+            <img class="social" src="./assets/x.png"  style="width: 32px; height: 32px;">
+           </div>
+          </div>
+          
+          <div class="flex-container">
+            <div class="column">
+             <p class="list"  style="font-weight: 700; font-size: 28px;">About</p>
+              <p class=".poppins-extralight list">About Us</p>
+              <p  class=".poppins-extralight list">News & Blog </p>
+              <p  class=".poppins-extralight list">Location</p>
+            </div>
+            
+            <div class="column">
+              <p class="list"  style="font-weight: 700; font-size: 28px;">Products</p>
+               <p class=".poppins-extralight list">Pricing</p>
+               <p  class=".poppins-extralight list">Store </p>
+               <p  class=".poppins-extralight list">Features</p>
+             </div>
+
+             <div class="column">
+              <p class="list" style="font-weight: 700; font-size: 28px;">Discover</p>
+               <p class=".poppins-extralight list">Contact Us</p>
+               <p  class=".poppins-extralight list">Customers</p>
+               <p  class=".poppins-extralight list">Affiliates</p>
+             </div>
+
+          </div>
+            
+          </div>
+        </div>
+
+            <!-- Mobile Content -->
+            <div class="mobile-layout"> 
+             
+              <div>
+              <div class="dropdown_footer">
+               
+                <button class="dropdown-button_footer">
+                  About
+                  <span class="dropdown-icon">&#9662;</span>
+                </button>
+                
+                <div class="dropdown-content">
+                  <a href="#option1">About Us</a>
+                  <a href="#option2">News & blog</a>
+                  <a href="#option3">Location</a>
+                </div>
+              </div>
+
+              <div class="dropdown_footer">
+               
+                <button class="dropdown-button_footer">
+                  Products
+                  <span class="dropdown-icon">&#9662;</span>
+                </button>
+                
+                <div class="dropdown-content">
+                  <a href="#option1">Pricing</a>
+                  <a href="#option2">Store</a>
+                  <a href="#option3">Features</a>
+                </div>
+              </div>
+
+              <div class="dropdown_footer">
+               
+                <button class="dropdown-button_footer">
+                  Discover
+                  <span class="dropdown-icon">&#9662;</span>
+                </button>
+                
+                <div class="dropdown-content">
+                  <a href="#option1">Contact Us</a>
+                  <a href="#option2">Customers</a>
+                  <a href="#option3">Affiliates</a>
+                </div>
+              </div>
+              </div>
+            
+          <div class="white-line"></div>
+  
+            <div >
+               <div class="social_media2">
+                <img style="height: 40px; width: 40px;" src="./assets/logo footer.png"  >
+               </div>
+
+              <div class="social_media2" >
+               <img class="social " src="./assets/instagram-.png" style="width: 24px; height: 24px;" >
+               <img class="social" src="./assets/whatsapp.png" style="width: 24px; height: 24px;" >
+               <img class="social" src="./assets/x.png"  style="width: 24px; height: 24px;">
+              </div>
+           
+            </div>
+           
+            </div>
+        
+        
+           </div> 
+
+     <!-- <div class="section__container footer__container">
+        <div class="footer__content"> -->
+      
+      
+    
+
+
     </footer>
     <script src="script.js"></script>
   </body>
